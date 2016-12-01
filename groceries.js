@@ -55,6 +55,7 @@ function addItem(){
 function saveList(){
     var tempSave = myList.toString();
     setCookie("tempCook",tempSave,1);
+    console.log("saved");
 }
 
 function clearList(){
@@ -62,7 +63,6 @@ function clearList(){
   while(myList.length){  
     myList.pop();  
     }  
-    //console.log(myList);
 }
 
 //courtesy of w3schools, from: http://www.w3schools.com/js/js_cookies.asp
