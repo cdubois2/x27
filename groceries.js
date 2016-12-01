@@ -2,10 +2,12 @@ var myList = [];
 window.onload = loadCookieList;
 
 function loadCookieList(){
-    var cookieSaver = getCookie("tempSave");
-    var arrayCookie = cookieSaver.split("");
-    for(var i = 0; i < arrayCookie.length; i++){
-        displayItem([i]);
+    var cookieSaver = getCookie("tempCook");
+    var arrayCookie = cookieSaver.split(" ");
+    var i = 1;
+    while(i < arrayCookie.length){
+       displayItem([i]);
+       i++;
     }
 }
 
