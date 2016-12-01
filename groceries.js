@@ -2,8 +2,8 @@ var myList = [];
 window.onload = loadCookieList;
 
 function loadCookieList(){
-    var cookieSaver = getCookie("tempCook");
-    var arrayCookie = cookieSaver.split(" ");
+    var cookieSaver = getCookie("tempSave");
+    var arrayCookie = cookieSaver.split("");
     for(var i = 0; i < arrayCookie.length; i++){
         displayItem([i]);
     }
