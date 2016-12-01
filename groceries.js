@@ -4,7 +4,7 @@ window.onload = loadCookieList;
 function loadCookieList(){
     var cookieSaver = getCookie("tempCook");
     var arrayCookie = cookieSaver.split(" ");
-    for(var i = 1; i < arrayCookie.length; i++){
+    for(var i = 0; i < arrayCookie.length; i++){
         displayItem(arrayCookie[i]);
     }
 }
