@@ -5,7 +5,9 @@ function loadCookieList(){
     var cookieSaver = getCookie("tempCook");
     var arrayCookie = cookieSaver.split(" ");
     for(var i = 0; i < arrayCookie.length; i++){
-        displayItem(arrayCookie[i]);
+        if(arrayCookie.length > 1){
+            displayItem(arrayCookie[i]);
+        }
     }
 }
 
