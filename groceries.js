@@ -5,17 +5,17 @@ function loadCookieList(){
     var cookieSaver = getCookie("tempCook");
     var arrayCookie = cookieSaver.split(" ");
     for(i = 0; i < arrayCookie.length; i++){
-       displayItem(i);
-       console.log(i);
+       displayItem[(i)];
+       console.log([i]);
     }
 }
 
-function displayItem(addCook){
-    if(myList.indexOf(addCook) == -1){
-        myList.push(addCook);
+function displayItem(iook){
+    if(myList.indexOf(iook) == -1){
+        myList.push(iook);
         console.log(myList);     
         var item = document.createElement("li"); 
-        var itemName = document.createTextNode(addCook);
+        var itemName = document.createTextNode(iook);
         var btnClose = document.createElement("button");
         var iconClose = document.createElement("span");
     
