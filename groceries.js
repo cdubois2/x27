@@ -3,7 +3,7 @@ window.onload = loadCookieList;
 
 function loadCookieList(){
     var cookieSaver = getCookie("tempCook");
-    var arrayCookie = cookieSaver.split("");
+    var arrayCookie = cookieSaver.split(" ");
     for(var i = 1; i < arrayCookie.length; i++){
         displayItem(arrayCookie[i]);
     }
