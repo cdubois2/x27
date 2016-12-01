@@ -6,7 +6,7 @@ function loadCookieList(){
     var arrayCookie = cookieSaver.split(" ");
     for(i = 0; i < arrayCookie.length; i++){
        displayItem[i];
-       console.log(i);
+       console.log([i]);
     }
 }
 
